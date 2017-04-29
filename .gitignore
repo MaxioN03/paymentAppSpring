@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/compiler.xml
+.idea/dataSources.local.xml
+.idea/dataSources/
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+src/main/java/com/netcracker/kutz/service/
+src/main/java/com/netcracker/kutz/web/
+target/

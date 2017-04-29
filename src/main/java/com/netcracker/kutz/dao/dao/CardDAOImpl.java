@@ -17,13 +17,14 @@ public class CardDAOImpl implements CardDao {
         CardDAOImpl cardDAO = new CardDAOImpl();
         List<Card> cardList = cardDAO.getCards();
     }
-    @PersistenceContext
+
+    @PersistenceContext(name="dataSource")
     private EntityManager entityManager;
 
     @Override
     public List<Card> getCards() {
         List<Card> cardList;
-        Query query =  entityManager.createQuery("from Card ");
+        Query query =  entityManager.createQuery("select c from Card c");
         cardList = query.getResultList();
         return cardList;
     }
