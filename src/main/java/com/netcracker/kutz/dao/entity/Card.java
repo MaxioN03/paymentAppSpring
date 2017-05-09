@@ -21,6 +21,15 @@ public class Card {
     @Column(name = "valid_thru")
     private String validThru;
 
+    public Card(int id, int number, String validThru) {
+        this.id = id;
+        this.number = number;
+        this.validThru = validThru;
+    }
+
+    public Card() {
+    }
+
     public int getId() {
         return id;
     }
